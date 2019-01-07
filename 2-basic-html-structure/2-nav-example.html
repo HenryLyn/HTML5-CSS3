@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nav example</title>
+</head>
+<body>
+<!--深入了解 nav -->
+<!--上文提到，要在页面中插入一组链接并非意味着一定要将它们包在 nav 元素里。 -->
+<!--设想有一个如图 3.6.3 所示的新闻页面。这是一篇文章的 Arts & Entertainment 部分，-->
+<!--是 一则关于某画廊开业的短文。该页面包含四个链接列表，其中只有两个列表具有足够的重要性， -->
+<!--可以包在 nav 中。（可以看到，这里省略了部分代码。） -->
+<!--位于 aside 中的次级导航允许用户跳转到 Arts & Entertainment 中的分类页面-->
+<!--（如 Movies、Music），因此它构成了页面的一个主要导航区块。不过，-->
+<!--Other Stories 这个 aside 则不是，footer 里的链接也不是。-->
+<!--（关于 aside 元素，参见 3.10 节。） 那么，如何判断是否对一组链接使用nav呢？-->
+<!--归根结底，这取决于内容的组织情况。至少， 应该将网站全局导航-->
+<!--（让用户可以跳至网站各个主要部分的导航）标记为nav。这种nav通常（但 并不总是）-->
+<!--出现在页面级的 header 元素里面（参见 3.5 节）。-->
+<!--=========================================================================================-->
+<!--开始页面级页眉-->
+<header role="banner">
+    <!--站点表示可以放在这里-->
+    <!--全站导航-->
+    <nav role="navigation">
+        <ul>...</ul>
+    </nav>
+</header>
+
+<!--=== 开始主要内容 ===-->
+<main role="main">
+    <h1>Arts & Entertainment: Museums</h1>
+    <article>
+        <h2>Gallery Opening Features the  Inspired, Inspiring</h2>
+        <p>... [故事内容] ... </p>
+    </article>
+    <aside>
+        <h2>Other Stories</h2>
+        <!--没有包含在nav里面-->
+        <ul>...故事连接...</ul>
+    </aside>
+</main>
+
+<!--=== 开始腐竹栏 ===-->
+<aside>
+    <!--次级导航-->
+    <nav role="navigation">
+        <ul>... [sub-nav]....</ul>
+    </nav>
+</aside>
+
+<!--=== 开始页面页脚 ===-->
+<footer>
+    <!--辅助性链接并未包含在nav中-->
+    <ul>..........</ul>
+</footer>
+</body>
+</html>
