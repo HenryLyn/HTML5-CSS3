@@ -1,0 +1,231 @@
+/*
+==============================
+Huarui.Lin 20190111
+==============================
+*/
+
+/* GENERAL
+-------------------------------------------*/
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font: 100%/1.2 Georgia, 'Times New Roman', Serif;
+}
+
+h1 {
+    color: #212121;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.25em;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: .975;
+    margin-bottom: .4125em; /* 21.45px/16px */
+}
+
+.about h2,
+.mod h2,
+.nav-main a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about h2,
+.mod h2 {
+    font-size: .875em;
+}
+
+.mod h2 {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: .75em;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #1162a4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.more:after {
+    content: ' »';
+}
+
+img {
+    border: 0;
+}
+
+/* HOLD PAGE
+-------------------------------------------*/
+.page {
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    width: 960px;
+}
+
+.container {
+    background: url("../img/bg.png") repeat-y 629px 0;
+}
+
+/* MAIN CONTAINER
+-------------------------------------------*/
+main {
+    float: left;
+    width: 600px;
+}
+
+/* MASTHEAD
+-------------------------------------------*/
+/* ::: SOCIAL SITE ::: */
+.masthead {
+    position: relative;
+}
+
+.masthead .social-sites {
+    position: absolute;
+    top: 41px;
+    right: 0;
+}
+
+.social-sites li {
+    display: inline;
+}
+
+.social-sites a {
+    display: inline-block;
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: .575em;
+    background-color: #019443;
+    color: #fff;
+    font-family: 'social icons', sans-serif;
+    font-size: 46px;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.social-sites a:hover {
+    background-color: #1162a4;
+    text-decoration: none;
+}
+
+/* ::: MAIN NAVIGATION ::: */
+.nav-main {
+    border-top: 5px solid #019443; /* 绿色 */
+    border-bottom: 1px solid #c8c8c8; /* 灰色 */
+    padding: .45em 0 .5em; /* 上为：7px 左右为：0 下为：8px */
+}
+
+.nav-main li {
+    display: inline-block;
+    border-left: 1px solid #c8c8c8;
+}
+
+.nav-main li:first-child {
+    border-left: none;
+}
+
+.nav-main a {
+    color: #292929;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em; /* 18px */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5em 1.15em .5em 1.4em;/* 9px 20.7px 9px 25.2px */
+}
+
+.nav-main .current-page,
+.nav-main .current-page:hover {
+    color: #747474;
+    cursor: default;
+    text-decoration: none;
+}
+
+/* POST
+---------------------------------------------*/
+.post-photo {
+    float: left;
+    margin-bottom: 2px;
+    margin-right: 22px;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+/* SIDEBAR
+---------------------------------------------*/
+.sidebar {
+    width: 300px;
+    float: right;
+    margin-top: 1.875em;
+}
+
+.map {
+    margin: 1.4375em 0 .8125em;
+}
+
+.links {
+    width: 270px;
+    margin:1.5em 0 4.125em;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 1.13em;
+}
+
+/* ::: ABOUT ME ::: */
+.about {
+    background-color: #2b2b2b;
+    padding: .3125em .625em .625em;
+    /* padding: 5px 10px 10px */
+    /*border: 1px solid red;*/
+    color: #fff;
+}
+
+.about img {
+    border: 5px solid #bebebe;
+}
+
+/* FOOTER
+--------------------------------------------------*/
+.footer {
+    /*clear: both;*/
+}
+.footer p {
+    font-size: .6875em; /* 11px/16px */
+}
+
+footer[role='contentinfo'] {
+    border-top: 1px solid #cacbcb;
+}
+
+.post-footer {
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    padding-bottom: .7em; /* 7.7px/11px */
+    padding-top: .7em;
+    /*clear: left;*/
+}
