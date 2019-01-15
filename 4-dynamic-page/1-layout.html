@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+</head>
+<style>
+    .bg {
+        background-color: #1162a4;
+        max-width: 960px;
+    }
+    .header {
+        max-width: 960px;
+        background-color: red;
+    }
+    .left {
+        width: 62.5%;
+        background-color: #747474;
+        float: left;
+    }
+
+    .right {
+        width: 31.5%;
+        background-color: #747474;
+        float: right;
+    }
+
+    .footer {
+        background-color: red;
+        max-width: 960px;
+        clear: both;
+    }
+</style>
+
+<body>
+<header class="header" role="banner">
+    <p>header</p>
+</header>
+<main class="bg" role="main">
+    <div class="left">
+        <p>left</p>
+    </div>
+    <div class="right">
+        <p>right</p>
+    </div>
+</main>
+<footer class="footer" role="contentinfo">
+    <p>footer</p>
+</footer>
+</body>
+</html>
